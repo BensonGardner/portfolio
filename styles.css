@@ -1,0 +1,202 @@
+/* Throughout this stylesheet, IDs are used for properties that will be changed with javascript */
+
+/* PAGE-WIDE */
+
+/* large amount of padding on body, to push it below fixed-position header */
+
+body {
+    font-family: "cabin", sans-serif;
+    margin: 0 auto;
+    padding: 135px 0 0;
+    max-width: 1150px;
+}
+
+h1 {
+    font: 2.05em;
+    text-transform: uppercase;
+    padding: 0 0 0;
+    font-weight: lighter;
+}
+
+h2 {
+    width: 100%;
+    font-size: 1.1em;
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* HEADER */
+
+.header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1150px;
+    padding: 10px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.logo-container {
+    padding: 0;
+    margin: 0;
+}
+
+#avatar {
+    max-width: 121px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.my-info {
+    margin: 0 0 0 30px;
+    padding: 0;
+    max-width: 11.5em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#my-name {
+    z-index: 0;
+}
+
+.text-box {
+    margin: 0;
+    padding: 0;
+}
+
+#tagline {
+    font-size: 0.7em;
+}
+
+/* HERO SECTION */
+
+.hero-container {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.hero {
+    margin: 0;
+    width: 100%;
+    height: 71%;
+}
+
+/* WORK SECTION */
+
+.work-samples {
+    display: -webkit-flex;
+    -webkit-align-items: space-between;
+    -webkit-justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1150px;
+}
+
+.project-box {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-content: space-between;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-img {
+    width: 100%;
+    height: 82%;
+}
+
+.project-img-white-bg {
+    width: 96%;
+    height: 79%;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.work-link {
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 338px) {
+    .tagline {
+        font-size: 0.85em;
+    };
+}
+
+@media screen and (min-width: 468px) {
+    .header {
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .my-info {
+        text-align: right;
+        max-width: inherit;
+    };
+}
+
+@media screen and (min-width: 560px) {
+    .work-samples {
+        margin: 0 5px;
+    }
+
+    .project-box {
+        width: calc(50vw - 40px);
+    }
+
+    .project-img-white-bg {
+        margin: 0;
+    };
+}
+
+@media screen and (min-width: 840px) {
+    .project-box {
+        min-width: calc(33vw - 40px);
+    };
+}
+
+@media screen and (min-width: 961px) {
+    .hero {
+        width: 960px;
+    };
+}
+
+@media screen and (min-width: 1150px) {
+    .project-box {
+        min-width: 370px;
+        max-width: 370px;
+    };
+}
