@@ -1,7 +1,5 @@
 READ ME
 
-This site contains a Javascript file, a CSS file, one HTML file, and a folder of 4 images.
+This site contains a Javascript file, a CSS file, one HTML file, and a folder of different sizes of 4 images, saved in multiple sizes for responsiveness.
 
-More documentation than this is probably not needed for this simple project. 
-
-It was a pleasure to write this "Read Me" document for you. We hope you have enjoyed it.
+The large hero image on index.html is a placeholder; it has no direct relationship to my front-end development or multimedia work. It was required as part of this assignment which was part of the Udacity.com nanodegree program I'm enrolled in. 
